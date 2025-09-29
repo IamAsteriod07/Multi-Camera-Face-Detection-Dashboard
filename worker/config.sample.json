@@ -1,0 +1,46 @@
+{
+  "cameras": [
+    {
+      "id": "cam1",
+      "rtsp": "rtsp://username:password@camera1/stream",
+      "ffmpeg_output": "rtmp://mediamtx.local/app/cam1",
+      "save_snapshots": true,
+      "test_video": "",   
+      "max_frames": 0
+    }
+  ],
+  "backend_alert_url": "http://localhost:3000/api/alerts",
+  "mediamtx": {
+    "host": "mediamtx.local",
+    "port": 1935
+  },
+  "s3": {
+    "enabled": false,
+    "bucket": "your-bucket",
+    "region": "us-east-1",
+    "access_key": "",
+    "secret_key": "",
+    "public_base_url": "https://your-bucket.s3.amazonaws.com/"
+  },
+  "models": {
+    "base_url": "https://your-trusted-host/models/face-dnn/",
+    "prototxt": "deploy.prototxt",
+    "caffemodel": "res10_300x300_ssd_iter_140000_fp16.caffemodel",
+    "caffemodel_sha256": "",
+    "prototxt_sha256": ""
+  },
+  "mq": {
+    "type": "rabbitmq",
+    "url": "amqp://guest:guest@localhost:5672/",
+    "exchange": "alerts",
+    "routing_key": "camera.alert"
+  },
+  "local_mocks": {
+    "use_mock_s3": true,
+    "use_mock_mq": true
+  },
+  "detection": {
+    "min_confidence": 0.5,
+    "skip_frames": 0
+  }
+}
