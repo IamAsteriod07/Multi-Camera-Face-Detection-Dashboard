@@ -22,7 +22,7 @@ This README explains how to run the project locally, what environment variables 
 
 ## Tech stack
 
-- React 18 + TypeScript
+- React + TypeScript
 - Vite
 - Tailwind CSS
 - Radix UI + shadcn-style components
