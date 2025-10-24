@@ -22,7 +22,7 @@ This README explains how to run the project locally, what environment variables 
 
 ## Tech stack
 
-- React 18 + TypeScript
+- React + TypeScript
 - Vite
 - Tailwind CSS
 - Radix UI + shadcn-style components
@@ -166,13 +166,5 @@ If you add public-facing env variables or change the Supabase schema, update thi
 This repository does not contain a license file. If you want a permissive license, add a `LICENSE` (for example MIT) and update this section.
 
 ---
-
-If you'd like, I can also:
-
-- change the bundled Supabase client to load from `import.meta.env` and apply that change across the repo; or
-- add a small CONTRIBUTING.md and CODE_OF_CONDUCT; or
-- create a short dev checklist with exact Windows cmd examples for common tasks.
-
-Tell me which extra item you'd like next and I'll apply it.
 
 
